@@ -100,4 +100,10 @@ public class MapperTest {
         loginTicket = loginTicketMapper.selectByTicket("abc");
         System.out.println(loginTicket);
     }
+
+    @Test
+    public void testSelectDiscussPost(){
+        DiscussPost discussPost = discussPostMapper.selectDiscussPostById(155);
+        System.out.println(discussPost);
+    }
 }
